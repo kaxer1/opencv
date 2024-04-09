@@ -3,7 +3,8 @@ import os
 import imutils
 
 personName = 'kevin'
-dataPath = 'D:\UISRAEL\OCTAVO\Tendencias\opencv\data'#Cambia a la ruta donde hayas almacenado Data
+#Cambia a la ruta donde hayas almacenado Data
+dataPath = 'D:/UISRAEL/OCTAVO/Tendencias/opencv/data'
 personPath = dataPath + '/' + personName
 
 if not os.path.exists(personPath):
