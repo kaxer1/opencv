@@ -5,17 +5,17 @@ dataPath = 'D:\UISRAEL\OCTAVO\Tendencias\opencv\data' #Cambia a la ruta donde ha
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
 
-#face_recognizer = cv2.face.EigenFaceRecognizer_create()
-#face_recognizer = cv2.face.FisherFaceRecognizer_create()
-#face_recognizer = cv2.face.LBPHFaceRecognizer_create()
+face_recognizer = cv2.face.EigenFaceRecognizer_create()
+face_recognizer = cv2.face.FisherFaceRecognizer_create()
+face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 # Leyendo el modelo
-#face_recognizer.read('modeloEigenFace.xml')
-#face_recognizer.read('modeloFisherFace.xml')
-#face_recognizer.read('modeloLBPHFace.xml')
+face_recognizer.read('modeloEigenFace.xml')
+face_recognizer.read('modeloFisherFace.xml')
+face_recognizer.read('modeloLBPHFace.xml')
 
-#cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-#cap = cv2.VideoCapture('Video.mp4')
+cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+cap = cv2.VideoCapture('Video.mp4')
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 
